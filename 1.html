@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Secret Page</title>
+  <script>
+    // check query string for auth
+    const urlParams = new URLSearchParams(window.location.search);
+    const auth = urlParams.get("auth");
+
+    if (auth !== "1odC33V8p") {
+      // redirect back if password not correct
+      window.location.href = "1h.html";
+    }
+  </script>
+</head>
+<body>
+  <div id="element">
+    <h1>hi</h1>
+  </div>
+</body>
+</html>
